@@ -1,0 +1,173 @@
+{
+  "id": "0eb2a3b3-e2fd-4ac1-8530-2e8605892956",
+  "version": "1.1",
+  "name": "main",
+  "url": "http://demo.litecart.net",
+  "tests": [{
+    "id": "12021f25-60c8-481e-a809-05c339beb8b1",
+    "name": "add",
+    "commands": [{
+      "id": "310ddb56-6606-4d66-8527-606d80776d05",
+      "comment": "",
+      "command": "open",
+      "target": "/en/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8f049f9c-6a23-4ccc-9e5a-49ff5f019233",
+      "comment": "",
+      "command": "store",
+      "target": "3",
+      "targets": [],
+      "value": "amount"
+    }, {
+      "id": "240219cc-4264-4806-8df8-082690e09e65",
+      "comment": "",
+      "command": "click",
+      "target": "css=img.image.img-responsive",
+      "targets": [
+        ["css=img.image.img-responsive", "css"],
+        ["xpath=//img[@alt='Yellow Duck']", "xpath:img"],
+        ["xpath=//div[@id='box-campaign-products']/div/div/div/a/div/img", "xpath:idRelative"],
+        ["xpath=//a/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9aff877e-18b8-48a2-b13e-baa1ca4cf785",
+      "comment": "",
+      "command": "click",
+      "target": "name=options[Size]",
+      "targets": [
+        ["name=options[Size]", "name"],
+        ["css=select[name=\"options[Size]\"]", "css"],
+        ["xpath=//select[@name='options[Size]']", "xpath:attributes"],
+        ["xpath=//div[@id='box-product']/div/div[3]/div[6]/form/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d5be045-4dc9-4186-a025-c9d4b92108ec",
+      "comment": "",
+      "command": "select",
+      "target": "name=options[Size]",
+      "targets": [],
+      "value": "label=Small"
+    }, {
+      "id": "6ada006f-2183-4fa6-bb53-d2c164358be4",
+      "comment": "",
+      "command": "click",
+      "target": "css=option[value=\"Small\"]",
+      "targets": [
+        ["css=option[value=\"Small\"]", "css"],
+        ["xpath=//option[@value='Small']", "xpath:attributes"],
+        ["xpath=//div[@id='box-product']/div/div[3]/div[6]/form/div/div/select/option[2]", "xpath:idRelative"],
+        ["xpath=//option[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d61cdaa5-8403-4ee9-bec0-e5187f21ee85",
+      "comment": "",
+      "command": "click",
+      "target": "name=quantity",
+      "targets": [
+        ["name=quantity", "name"],
+        ["css=input[name=\"quantity\"]", "css"],
+        ["xpath=//input[@name='quantity']", "xpath:attributes"],
+        ["xpath=//div[@id='box-product']/div/div[3]/div[6]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "be55dab9-d7b3-40e1-82d2-603667d9696b",
+      "comment": "",
+      "command": "type",
+      "target": "name=quantity",
+      "targets": [
+        ["name=quantity", "name"],
+        ["css=input[name=\"quantity\"]", "css"],
+        ["xpath=//input[@name='quantity']", "xpath:attributes"],
+        ["xpath=//div[@id='box-product']/div/div[3]/div[6]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "${amount}"
+    }, {
+      "id": "297bbe60-767c-4708-887b-0c34d88ccf98",
+      "comment": "",
+      "command": "click",
+      "target": "name=add_cart_product",
+      "targets": [
+        ["name=add_cart_product", "name"],
+        ["css=button[name=\"add_cart_product\"]", "css"],
+        ["xpath=//button[@name='add_cart_product']", "xpath:attributes"],
+        ["xpath=//div[@id='box-product']/div/div[3]/div[6]/form/div[2]/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb740df4-4e9c-4a9a-b66d-3c85c992e97f",
+      "comment": "",
+      "command": "click",
+      "target": "css=div.featherlight-close-icon.featherlight-close",
+      "targets": [
+        ["css=div.featherlight-close-icon.featherlight-close", "css"],
+        ["xpath=//body/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "28b1b478-570d-4b9b-b7d0-4e87678c214e",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b153f1ff-6d1e-454e-a8eb-ce0223b47adb",
+      "comment": "",
+      "command": "click",
+      "target": "css=#cart > a",
+      "targets": [
+        ["css=#cart > a", "css"],
+        ["//div[@id='cart']/a", "xpath:idRelative"],
+        ["//a[@href='http://demo.litecart.net/en/checkout']", "xpath:href"],
+        ["//div[3]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d52f624-173e-49f6-8549-1229d0d755cc",
+      "comment": "",
+      "command": "click",
+      "target": "name=remove_cart_item",
+      "targets": [
+        ["name=remove_cart_item", "name"],
+        ["css=button[name=\"remove_cart_item\"]", "css"],
+        ["//button[@name='remove_cart_item']", "xpath:attributes"],
+        ["//div[@id='box-checkout-cart']/div/table/tbody/tr/td[6]/button", "xpath:idRelative"],
+        ["//td[6]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a932428-c84d-4c9c-b9d0-6f979458a599",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=<< Back",
+      "targets": [
+        ["linkText=<< Back", "linkText"],
+        ["xpath=//a[contains(text(),'<< Back')]", "xpath:link"],
+        ["xpath=//div[@id='box-checkout']/div/p[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[@href='http://demo.litecart.net/en/'])[2]", "xpath:href"],
+        ["xpath=//p[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "11973401-ca36-4dc7-93cf-af11bd7b5698",
+    "name": "main",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["12021f25-60c8-481e-a809-05c339beb8b1"]
+  }],
+  "urls": ["http://demo.litecart.net/"],
+  "plugins": []
+}
